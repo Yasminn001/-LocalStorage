@@ -1,0 +1,142 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #daa59c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.app-container {
+    background: #bb6868;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.app-container:hover {
+    transform: scale(1.02);
+}
+
+header h1 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.task-input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#addTaskBtn {
+    width: 18%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #e6cfe0;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addTaskBtn:hover {
+    background-color: #e7bedc;
+}
+
+#taskList {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #e9f7e9;
+}
+
+li button {
+    background-color: #e6cfe0;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+li button:hover {
+    background-color: #cc94bd;
+}
+
+.clear-btn {
+    background-color: #e6cfe0;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 12px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.clear-btn:hover {
+    background-color: #cc94bd;
+}
+
+
+@media (max-width: 600px) {
+    .app-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #taskInput {
+        width: 70%;
+    }
+
+    #addTaskBtn {
+        width: 25%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
